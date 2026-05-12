@@ -14,47 +14,47 @@
   body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; justify-content: center; padding: 2rem 1rem; }
   .page { display: grid; grid-template-columns: 260px 1fr; max-width: 960px; width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.6); }
 
-  /* SIDEBAR */
-  .sidebar { background: var(--sidebar); padding: 2.5rem 1.8rem; display: flex; flex-direction: column; gap: 2rem; border-right: 1px solid var(--border); }
+  .sidebar { background: var(--sidebar); padding: 2.5rem 1.8rem; display: flex; flex-direction: column; gap: 1.8rem; border-right: 1px solid var(--border); }
   .avatar { width: 130px; height: 130px; border-radius: 50%; overflow: hidden; border: 3px solid var(--accent); box-shadow: 0 0 0 4px rgba(79,142,247,0.2); margin-bottom: .4rem; flex-shrink: 0; align-self: center; }
   .avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
   .avatar-fallback { width: 100%; height: 100%; background: linear-gradient(135deg, var(--accent), var(--accent2)); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; color: #fff; }
   .sidebar h1 { font-size: 1.2rem; font-weight: 900; line-height: 1.2; text-align: center; }
-  .sidebar .title { font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-top: .3rem; text-align: center; }
-  .section-label { font-size: .65rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: .4rem; margin-bottom: .8rem; }
-  .contact-list { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
-  .contact-list li { font-size: .75rem; color: var(--muted); display: flex; align-items: center; gap: .5rem; }
+  .sidebar .title { font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-top: .3rem; text-align: center; line-height: 1.5; }
+  .section-label { font-size: .63rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: .4rem; margin-bottom: .75rem; }
+  .contact-list { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+  .contact-list li { font-size: .73rem; color: var(--muted); display: flex; align-items: center; gap: .5rem; }
   .contact-list li a { color: var(--accent); text-decoration: none; }
-  .contact-list li a:hover { text-decoration: underline; }
-  .skill-group { margin-bottom: 1rem; }
-  .skill-group h4 { font-size: .68rem; font-weight: 700; color: var(--accent2); text-transform: uppercase; letter-spacing: .1em; margin-bottom: .5rem; }
-  .tags { display: flex; flex-wrap: wrap; gap: .35rem; }
-  .tag { background: var(--tag-bg); color: var(--text); font-size: .66rem; font-weight: 500; padding: .22rem .52rem; border-radius: 6px; border: 1px solid var(--border); }
-  .lang-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: .5rem; }
-  .lang-item span { font-size: .78rem; }
-  .lang-level { font-size: .68rem; color: var(--accent); font-weight: 600; }
+  .skill-group { margin-bottom: .85rem; }
+  .skill-group h4 { font-size: .66rem; font-weight: 700; color: var(--accent2); text-transform: uppercase; letter-spacing: .1em; margin-bottom: .45rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: .3rem; }
+  .tag { background: var(--tag-bg); color: var(--text); font-size: .64rem; font-weight: 500; padding: .2rem .48rem; border-radius: 6px; border: 1px solid var(--border); }
+  .lang-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: .45rem; }
+  .lang-item span { font-size: .76rem; }
+  .lang-level { font-size: .66rem; color: var(--accent); font-weight: 600; }
 
-  /* MAIN */
-  .main { padding: 2.5rem 2.2rem; display: flex; flex-direction: column; gap: 2rem; }
-  .summary { background: linear-gradient(135deg, #1a2236, #131929); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 1.2rem 1.4rem; border-radius: 10px; font-size: .82rem; line-height: 1.75; color: #c8cddb; }
-  .section { display: flex; flex-direction: column; gap: 1.2rem; }
+  .main { padding: 2.2rem 2rem; display: flex; flex-direction: column; gap: 1.8rem; }
+  .summary { background: linear-gradient(135deg, #1a2236, #131929); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 1.1rem 1.3rem; border-radius: 10px; font-size: .8rem; line-height: 1.75; color: #c8cddb; }
+  .section { display: flex; flex-direction: column; gap: 1.1rem; }
   .job { position: relative; padding-left: 1rem; border-left: 2px solid var(--border); }
   .job::before { content: ''; position: absolute; left: -5px; top: 6px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
-  .job-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: .3rem; margin-bottom: .25rem; }
-  .job-title { font-size: .88rem; font-weight: 700; }
-  .job-company { font-size: .77rem; color: var(--accent); font-weight: 600; }
-  .job-date { font-size: .7rem; color: var(--muted); background: var(--tag-bg); padding: .2rem .55rem; border-radius: 20px; white-space: nowrap; }
-  .job ul { list-style: none; margin-top: .45rem; display: flex; flex-direction: column; gap: .38rem; }
-  .job ul li { font-size: .78rem; color: #b0b8cc; line-height: 1.6; padding-left: 1rem; position: relative; }
-  .job ul li::before { content: '▸'; position: absolute; left: 0; color: var(--accent2); font-size: .68rem; top: .1rem; }
-  .edu-item { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: .3rem; }
-  .edu-item .edu-left h4 { font-size: .86rem; font-weight: 700; }
-  .edu-item .edu-left p { font-size: .76rem; color: var(--muted); margin-top: .15rem; }
-  .edu-item .edu-date { font-size: .7rem; color: var(--muted); }
-  .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .65rem; }
-  .cert-card { background: var(--tag-bg); border: 1px solid var(--border); border-radius: 8px; padding: .7rem .9rem; }
-  .cert-card h5 { font-size: .76rem; font-weight: 700; }
-  .cert-card p { font-size: .68rem; color: var(--muted); margin-top: .2rem; }
+  .job-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: .3rem; margin-bottom: .2rem; }
+  .job-title { font-size: .85rem; font-weight: 700; }
+  .job-company { font-size: .75rem; color: var(--accent); font-weight: 600; }
+  .job-date { font-size: .68rem; color: var(--muted); background: var(--tag-bg); padding: .18rem .5rem; border-radius: 20px; white-space: nowrap; }
+  .job ul { list-style: none; margin-top: .4rem; display: flex; flex-direction: column; gap: .35rem; }
+  .job ul li { font-size: .76rem; color: #b0b8cc; line-height: 1.6; padding-left: 1rem; position: relative; }
+  .job ul li::before { content: '▸'; position: absolute; left: 0; color: var(--accent2); font-size: .66rem; top: .1rem; }
+  .hl { color: var(--accent2); font-weight: 600; }
+  .edu-item { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: .3rem; margin-bottom: .4rem; }
+  .edu-item .edu-left h4 { font-size: .84rem; font-weight: 700; }
+  .edu-item .edu-left p { font-size: .74rem; color: var(--muted); margin-top: .15rem; }
+  .edu-item .edu-date { font-size: .68rem; color: var(--muted); }
+  .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+  .cert-card { background: var(--tag-bg); border: 1px solid var(--border); border-radius: 8px; padding: .65rem .85rem; }
+  .cert-card.featured { border-color: var(--accent); }
+  .cert-card h5 { font-size: .74rem; font-weight: 700; }
+  .cert-card p { font-size: .66rem; color: var(--muted); margin-top: .18rem; }
+  .badge { font-size: .56rem; background: var(--accent); color: #fff; padding: .1rem .32rem; border-radius: 4px; font-weight: 700; margin-left: .3rem; vertical-align: middle; }
 
   @media print {
     body { background: #fff; padding: 0; }
@@ -66,15 +66,14 @@
 <body>
 <div class="page">
 
-  <!-- SIDEBAR -->
   <aside class="sidebar">
     <div style="display:flex;flex-direction:column;align-items:center;">
       <div class="avatar">
-        <img src="20250317_190124_311.jpg" alt="João Victor" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <img src="profile.jpg" alt="João Victor" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
         <div class="avatar-fallback">JV</div>
       </div>
       <h1>João Victor<br>Abas Matos</h1>
-      <div class="title">Data & Analytics Lead · Digital Assets</div>
+      <div class="title">Data & Analytics Lead<br>Digital Assets · Crypto </div>
     </div>
 
     <div>
@@ -88,36 +87,46 @@
     </div>
 
     <div>
-      <div class="section-label">Skills</div>
+      <div class="section-label">Core Competencies</div>
       <div class="skill-group">
-        <h4>Data & Analytics</h4>
+        <h4>Data Analytics & Reporting</h4>
         <div class="tags">
-          <span class="tag">Python</span><span class="tag">SQL</span>
-          <span class="tag">Data Visualization</span><span class="tag">A/B Testing</span>
-          <span class="tag">Dashboards</span>
+          <span class="tag">SQL</span><span class="tag">Python</span>
+          <span class="tag">Data Viz</span><span class="tag">KPI Tracking</span>
+          <span class="tag">Digital Analytics</span><span class="tag">A/B Testing</span>
         </div>
       </div>
       <div class="skill-group">
-        <h4>Crypto / Web3</h4>
+        <h4>Crypto & Digital Assets</h4>
         <div class="tags">
-          <span class="tag">Digital Assets</span><span class="tag">DeFi</span>
-          <span class="tag">CBDC</span><span class="tag">Crypto Payments</span>
-          <span class="tag">Web3</span>
+          <span class="tag">Crypto Payments</span><span class="tag">DeFi</span>
+          <span class="tag">Web3</span><span class="tag">CBDC</span>
+          <span class="tag">Digital Assets</span><span class="tag">Crypto Distribution</span>
         </div>
       </div>
       <div class="skill-group">
-        <h4>AI & Product</h4>
+        <h4>Strategy</h4>
         <div class="tags">
-          <span class="tag">GenAI / GPT</span><span class="tag">OKRs</span>
-          <span class="tag">Scrum / CSPO</span><span class="tag">Product Analytics</span>
+          <span class="tag">Growth & Go-to-Market</span>
+          <span class="tag">OKRs</span>
           <span class="tag">Data Governance</span>
         </div>
       </div>
       <div class="skill-group">
-        <h4>Business</h4>
+        <h4>Product & Operations</h4>
         <div class="tags">
-          <span class="tag">Go-to-Market</span><span class="tag">Market Research</span>
-          <span class="tag">Budget Mgmt</span><span class="tag">Agile</span>
+          <span class="tag">Product Discovery</span>
+          <span class="tag">Product Delivery</span>
+          <span class="tag">Process Automation</span>
+          <span class="tag">Reporting Automation</span>
+          <span class="tag">Scrum</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Leadership</h4>
+        <div class="tags">
+          <span class="tag">Cross-Functional Teams</span>
+          <span class="tag">Stakeholder Mgmt</span>
         </div>
       </div>
     </div>
@@ -127,22 +136,12 @@
       <div class="lang-item"><span>Portuguese</span><span class="lang-level">Native</span></div>
       <div class="lang-item"><span>English</span><span class="lang-level">Fluent</span></div>
     </div>
-
-    <div>
-      <div class="section-label">Interests</div>
-      <div class="tags">
-        <span class="tag">DeFi</span><span class="tag">AI</span>
-        <span class="tag">Web3</span><span class="tag">Innovation</span>
-        <span class="tag">Podcasts</span><span class="tag">Guitar</span>
-      </div>
-    </div>
   </aside>
 
-  <!-- MAIN -->
   <main class="main">
 
     <div class="summary">
-      Data & Analytics professional with 5+ years at Itaú Unibanco leading data strategy, crypto payment initiatives, and digital asset products. Deep experience at the intersection of finance, blockchain, and AI — from CBDC cross-border experiments with central banks to GenAI-powered customer support at scale. Driven by data-driven decisions and a passion for Web3 and DeFi innovation.
+      Data & Analytics Lead at <span class="hl">Itaú Unibanco</span> — Latin America's largest bank — with 5+ years driving analytics, operations, and digital asset strategy within the institution's crypto and innovation units. Directly involved in <span class="hl">CBDC experimentation with central banks and crypto payments R&D </span> , combining deep financial-institution expertise with hands-on Web3 experience.
     </div>
 
     <div class="section">
@@ -157,10 +156,11 @@
           <div class="job-date">Aug 2023 – Present</div>
         </div>
         <ul>
-          <li>Collaborate on product go-to-market and growth strategy with product, marketing, and tech teams; define and track key product and business metrics.</li>
-          <li>Lead Data Science initiatives to uncover trends and patterns in product, customer, and market data; develop real-time visualization tools for market monitoring.</li>
-          <li>Developed and supports a GenAI chatbot (GPT) to enhance customer support capacity at scale.</li>
-          <li>Promote data governance and advocacy throughout the Digital Assets business unit.</li>
+          <li>Collaborate on <span class="hl">product go-to-market and growth strategy</span> with product, marketing, and tech teams for the bank's digital assets business.</li>
+          <li>Define and track key product and business metrics; develop and maintain <span class="hl">data visualization tools for real-time product and market monitoring</span>.</li>
+          <li>Promote <span class="hl">data governance</span> and advocacy throughout the business unit; guide strategic decisions through data analysis and experimentation.</li>
+          <li>Lead <span class="hl">Data Science initiatives</span> to uncover trends and patterns in product, customer, and market data.</li>
+          <li>Develop and support a <span class="hl">GenAI chatbot running GPT</span> to enhance customer support capacity at scale.</li>
         </ul>
       </div>
 
@@ -173,52 +173,67 @@
           <div class="job-date">Apr 2022 – Aug 2023</div>
         </div>
         <ul>
-          <li>Led market research on crypto payments adoption and identified international payment opportunities leveraging digital assets.</li>
-          <li>Collaborated with the Central Banks of Brazil and Colombia on CBDC experimentation — specifically "Cross-border PvP with CBDC" use cases.</li>
+          <li>Conducted market research initiatives on <span class="hl">crypto payments adoption</span> to inform product and partnership strategy.</li>
+          <li>Identified <span class="hl">international payment business opportunities</span> leveraging cryptocurrencies and digital assets.</li>
+          <li>Collaborated with the <span class="hl">Central Banks of Brazil and Colombia</span> on CBDC experimentation, specifically "Cross-border PvP with CBDC" use cases.</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-header">
           <div>
-            <div class="job-title">Senior Analyst / PO — IT Indicators Management</div>
+            <div class="job-title">Talents in Action Program — Crypto Payments</div>
+            <div class="job-company">Itaú Unibanco S.A · São Paulo, Brazil</div>
+          </div>
+          <div class="job-date">Mar 2022 – Jun 2022</div>
+        </div>
+        <ul>
+          <li>Led the <span class="hl">hackathon-winning project team</span>, aiming to redesign customer experience for international remittance through cryptocurrency integration.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Senior Analyst / PO — IT Indicators Management Superintendence</div>
             <div class="job-company">Itaú Unibanco S.A · São Paulo, Brazil</div>
           </div>
           <div class="job-date">Aug 2020 – Mar 2022</div>
         </div>
         <ul>
-          <li>Supported a data product tracking metrics across 1,000+ IT squads, resulting in a 90% increase in productivity within one year.</li>
-          <li>Conducted data analysis for bank executives to evaluate dev team performance and validate tech strategy (e.g., integrated community model, infrastructure modernization).</li>
-          <li>Redesigned budget management processes, integrating productivity KPIs into financial tracking.</li>
+          <li>Conducted studies and data analysis for bank executives to evaluate dev team performance, validate key actions, and strategies within the technology sector.</li>
+          <li>Supported a <span class="hl">data-driven product tracking metrics across 1,000+ IT squads</span>, resulting in a <span class="hl">90% increase in productivity</span> in one year.</li>
+          <li>Redesigned <span class="hl">budget management processes</span>, integrating metrics and productivity KPIs into budget tracking.</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-header">
           <div>
-            <div class="job-title">Trainee — Job Rotation Program</div>
+            <div class="job-title">Trainee 2020 — Job Rotation</div>
             <div class="job-company">Itaú Unibanco S.A · São Paulo, Brazil</div>
           </div>
           <div class="job-date">Jan 2020 – Jul 2020</div>
         </div>
         <ul>
-          <li>E-commerce (REDE): analyzed credit card transaction data to uncover conversion rate improvement opportunities.</li>
-          <li>Mortgage & Vehicle Loans: built KPI dashboards for post-sale monitoring; designed a predictive churn model from customer support data.</li>
-          <li>Insurance: explored process automation in claim analysis using Python OCR libraries.</li>
+          <li>E-commerce (REDE): explored conversion rate improvements by <span class="hl">analyzing credit card transaction data</span>.</li>
+          <li>Mortgage & Vehicles: built post-sale KPI dashboards; designed a <span class="hl">predictive churn model</span> from customer support data.</li>
+          <li>Insurance: explored <span class="hl">process automation</span> in claim analysis using Python OCR libraries.</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-header">
           <div>
-            <div class="job-title">Startup Member — Sales & Customer Success</div>
+            <div class="job-title">Startup Member / Sales / Customer Success</div>
             <div class="job-company">Behapp · São Luís, Brazil</div>
           </div>
           <div class="job-date">Jan 2019 – Dec 2019</div>
         </div>
         <ul>
-          <li>Co-created the solution and business model for a digital medical appointment platform; secured a sales agreement with a major local hospital.</li>
-          <li>Applied agile methodology for feature prioritization with the IT team, significantly increasing delivery volume.</li>
+          <li>Co-created the solution and structured the business model for an online medical appointment platform; secured a sales agreement with a large local hospital.</li>
+          <li>Leveraged <span class="hl">agile methodology</span> for feature prioritization with the IT team, significantly increasing delivery volume.</li>
+          <li>Defined and managed <span class="hl">sales strategy and pipeline</span>.</li>
         </ul>
       </div>
     </div>
@@ -234,8 +249,8 @@
       </div>
       <div class="edu-item">
         <div class="edu-left">
-          <h4>Sandwich Undergraduate Exchange</h4>
-          <p>University of Liverpool · Liverpool, UK</p>
+          <h4>Sandwich Undergraduate</h4>
+          <p>University of Liverpool · Liverpool, United Kingdom</p>
         </div>
         <div class="edu-date">2014 – 2015</div>
       </div>
@@ -244,7 +259,11 @@
     <div class="section">
       <div class="section-label">Courses & Certifications</div>
       <div class="cert-grid">
-        <div class="cert-card">
+        <div class="cert-card featured">
+          <h5>AI Product Leaders <span class="badge">CURRENT</span></h5>
+          <p>Tera · 2026</p>
+        </div>
+        <div class="cert-card featured">
           <h5>DeFi Talents</h5>
           <p>Frankfurt School of Finance & Management · 2023</p>
         </div>
@@ -265,7 +284,7 @@
           <p>Itaú · 2021</p>
         </div>
         <div class="cert-card">
-          <h5>Yellow Belt</h5>
+          <h5>Yellow Belt Trained</h5>
           <p>Itaú · 2020</p>
         </div>
       </div>
